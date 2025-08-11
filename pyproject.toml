@@ -1,0 +1,17 @@
+[project]
+name = "chemicalpropertypredictor"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "joblib>=1.5.1",
+    "numpy>=2.2.6",
+    "pandas>=2.3.1",
+    "py3dmol>=2.5.2",
+    "rdkit>=2025.3.5",
+    "scikit-learn>=1.7.1",
+    "streamlit>=1.48.0",
+    "torch>=2.8.0",
+    "tqdm>=4.67.1",
+]
