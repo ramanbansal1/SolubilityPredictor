@@ -94,11 +94,7 @@ def main():
                 st.components.v1.html(viewer_html, height=450)
         
         with col2:
-            # Molecular properties
-            st.subheader("Molecular Properties")
-            st.write(f"**Molecular Weight:** {Descriptors.ExactMolWt(mol):.2f}")
-            st.write(f"**Number of Heavy Atoms:** {mol.GetNumHeavyAtoms()}")
-            st.write(f"**Rotatable Bonds:** {Lipinski.NumRotatableBonds(mol)}")
+            
             
             # Solubility prediction with proper error handling
             try:
