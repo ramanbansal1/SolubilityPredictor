@@ -10,6 +10,8 @@ import torch
 import torch.nn as nn
 from tqdm import tqdm
 import matplotlib.pyplot as plt
+import joblib
+import sys
 
 warnings.filterwarnings('ignore')
 
@@ -36,6 +38,13 @@ y = y[mask]
 # PCA reduction
 pca = PCA(n_components=128)
 X = pca.fit_transform(X)
+
+# Save PCA for deployment
+joblib.dump(pca, "pca.joblib")
+print("PCA saved to pca.joblib")
+
+import sys
+sys.exit(0)
 
 # Train/test split
 X_train, X_test, y_train, y_test = train_test_split(
