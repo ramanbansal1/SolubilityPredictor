@@ -1,0 +1,15 @@
+libxrender1
+libxtst6
+libxi6
+libxrandr2
+libxss1
+libxcursor1
+libxcomposite1
+libxdamage1
+libxfixes3
+libpango-1.0-0
+libatk1.0-0
+libc6-dev
+libcairo-gobject2
+libgdk-pixbuf2.0-0
+libgtk-3-0
